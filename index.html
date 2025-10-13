@@ -39,9 +39,19 @@
       .intro p { font-size: 16px; line-height: 24px; margin-bottom: 30px; }
       .btn-custom { padding: 12px 24px; font-size: 14px; }
     }
-  </style>
-</head>
+    .navbar-brand img {
+  height: 45px;
+  transition: height 0.3s ease;
+}
 
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 38px;
+  }
+}
+
+</style>
+</head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <div id="root">
     <div>
@@ -55,16 +65,15 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span> 
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Smart IT & CCTV Solutions</a> 
+            <a class="navbar-brand page-scroll" href="#page-top">
+            <img src="./img/Logo 2.png" alt="Smart IT & CCTV Solutions" style="height:70px; margin-top:-25px;">
+            </a>
           </div>
-
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#features" class="page-scroll">Features</a></li>
               <li><a href="#about" class="page-scroll">About</a></li>
-              <li><a href="#services" class="page-scroll">Services</a></li>
               <li><a href="#portfolio" class="page-scroll">Projects</a></li>
-              <li><a href="#testimonials" class="page-scroll">Testimonials</a></li>
               <li><a href="#team" class="page-scroll">Team</a></li>
               <li><a href="#contact" class="page-scroll">Contact</a></li>
             </ul>
@@ -86,6 +95,7 @@
               </div>
             </div>
           </div>
+        </div>
         </div>
       </header>
 
@@ -134,7 +144,6 @@
                 <p>Smart IT & CCTV Solutions is a Peshawar-based security and IT firm delivering tailored surveillance, networking, and biometric solutions. We combine professional-grade equipment with expert installations and ongoing support to protect people and assets.</p>
                 <h3>Our Mission</h3>
                 <p>To provide reliable, affordable and scalable security systems that empower organizations and homeowners to feel safer every day.</p>
-
                 <h3>Why clients choose us</h3>
                 <div class="list-style">
                   <div class="col-lg-6 col-sm-6 col-xs-12">
@@ -154,49 +163,13 @@
                     </ul>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- SERVICES -->
-      <div id="services" class="text-center">
-        <div class="container">
-          <div class="section-title">
-            <h2>Our Services</h2>
-            <p>Comprehensive security & IT services for every need.</p>
-          </div>
-
-          <div class="row">
-            <div class="col-md-4">
-              <i class="fa fa-video-camera"></i>
-              <div class="service-desc">
-                <h3>CCTV Installation</h3>
-                <p>Site surveys, camera selection, professional mounting, and recording setup with remote viewing.</p>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <i class="fa fa-sitemap"></i>
-              <div class="service-desc">
-                <h3>Network Design & Setup</h3>
-                <p>Wired & wireless network deployment, VLANs, switches, and secure internet access for businesses.</p>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <i class="fa fa-id-badge"></i>
-              <div class="service-desc">
-                <h3>Biometric Attendance</h3>
-                <p>Attendance systems and access control with reporting tools for payroll and compliance.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
+    </div>
+  </div>
 
       <!-- PROJECTS / GALLERY -->
       <div id="portfolio" class="text-center">
@@ -205,7 +178,6 @@
             <h2>Our Projects</h2>
             <p>Selected installations showcasing our work in CCTV, networking and access control.</p>
           </div>
-
           <div class="row">
             <div class="portfolio-items">
               <div class="col-sm-6 col-md-4 col-lg-4">
@@ -247,54 +219,6 @@
         </div>
       </div>
 
-      <!-- TESTIMONIALS -->
-      <div id="testimonials">
-        <div class="container">
-          <div class="section-title text-center">
-            <h2>What Our Clients Say</h2>
-          </div>
-
-          <div class="row">
-            <div class="col-md-4">
-              <div class="testimonial">
-                <div class="testimonial-image">
-                  <img src="img/testimonials/01.jpg" alt="Client A" loading="lazy">
-                </div>
-                <div class="testimonial-content">
-                  <p>"Smart IT & CCTV delivered a flawless installation and the team was professional throughout." </p>
-                  <div class="testimonial-meta"> - Ahmed R.</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="testimonial">
-                <div class="testimonial-image">
-                  <img src="img/testimonials/02.jpg" alt="Client B" loading="lazy">
-                </div>
-                <div class="testimonial-content">
-                  <p>"Fast response, great support and a secure system that just works." </p>
-                  <div class="testimonial-meta"> - Fatima S.</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="testimonial">
-                <div class="testimonial-image">
-                  <img src="img/testimonials/03.jpg" alt="Client C" loading="lazy">
-                </div>
-                <div class="testimonial-content">
-                  <p>"Their biometric attendance system saved us time and simplified payroll." </p>
-                  <div class="testimonial-meta"> - Bilal K.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
       <!-- TEAM -->
       <div id="team" class="text-center">
         <div class="container">
@@ -306,7 +230,7 @@
           <div id="row">
             <div class="col-md-3 col-sm-6 team">
               <div class="thumbnail">
-                <img src="img/sis-team-amjad.jpg" alt="Amjad Khan" class="team-img" loading="lazy">
+                <img src="./img/team/01.jpg" alt="Amjad Khan" class="team-img" loading="lazy">
                 <div class="caption">
                   <h4>Amjad Khan</h4>
                   <p>CEO & Founder</p>
