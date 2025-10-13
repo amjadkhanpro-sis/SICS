@@ -89,47 +89,45 @@
               <div class="row">
                 <div class="col-md-8 col-md-offset-2 intro-text">
                   <h1 class="glow-gradient">Smart Protection for a Safer Tomorrow<span></span></h1>
-                  <p><b>Professional CCTV, networking and biometric attendance solutions — installed and supported by Smart IT & CCTV Solutions.</p></b>
+                  <p><b class="glow-gradient">Professional CCTV, networking and biometric attendance solutions — installed and supported by Smart IT & CCTV Solutions.</p></b>
+                <style>
+                .glow-gradient {
+                  font-size: 2.8rem;
+                  font-weight: 700;
+                  background: linear-gradient(90deg, #0000ff, #ffffff, #0602f7);
+                  background-size: 300%;
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+                  opacity: 0;
+                  transform: translateY(20px);
+                  animation: fadeIn 2s ease-out forwards, gradientMove 5s infinite linear;
+                                              }
+                  /* Fade-in + slide-up */
+                  @keyframes fadeIn {
+                    0% {
+                      opacity: 0;
+                      transform: translateY(30px);
+                    }
+                    100% {
+                      opacity: 1;
+                      transform: translateY(0);
+                    }
+                  }
 
-<style>
-.glow-gradient {
-  font-size: 2.8rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #3305ff, #dcf30a, #ff0303);
-  background-size: 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 2s ease-out forwards, gradientMove 5s infinite linear;
-}
+                  /* Gradient moves smoothly */
+                  @keyframes gradientMove {
+                    10% { background-position: 10%; }
+                    100% { background-position: 100%; }
+                  }
 
-/* Fade-in + slide-up */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Gradient moves smoothly */
-@keyframes gradientMove {
-  0% { background-position: 0%; }
-  100% { background-position: 100%; }
-}
-
-/* Paragraph style */
-p {
-  font-size: 1.1rem;
-  color: #555;
-  margin-top: 10px;
-}
-</style>
+                  /* Paragraph style */
+                  p {
+                    font-size: 1.1rem;
+                    color: #000000;
+                    margin-top: 2px;
+                  }
+                  </style>
 
                   <a href="#contact" class="btn btn-custom btn-lg page-scroll">Contact Us</a>
                 </div>
@@ -176,10 +174,10 @@ p {
       <div id="about">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-16 col-md-6">
               <img src="img/about.jpg" alt="Smart IT & CCTV Solutions - About" class="img-responsive" loading="lazy">
             </div>
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-16 col-md-6">
               <div class="about-text">
                 <h2>About Smart IT & CCTV Solutions</h2>
                 <p>Smart IT & CCTV Solutions is a Peshawar-based security and IT firm delivering tailored surveillance, networking, and biometric solutions. We combine professional-grade equipment with expert installations and ongoing support to protect people and assets.</p>
