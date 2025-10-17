@@ -3,7 +3,7 @@ html {
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  color: #777;
+  color: #1282c4;
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
@@ -18,7 +18,7 @@ h2 {
   margin: 0 0 20px;
   font-weight: 800;
   font-size: 36px;
-  color: #333;
+  color: #2800d8;
 }
 h3 {
   font-size: 20px;
