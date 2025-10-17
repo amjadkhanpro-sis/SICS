@@ -96,8 +96,10 @@
                   font-weight: 700;
                   background: linear-gradient(90deg, #ffffff, #969494, #ffffff);
                   background-size: 300%;
+                  background-clip: text;
                   -webkit-background-clip: text;
                   -webkit-text-fill-color: transparent;
+                  color: transparent;
                   text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
                   opacity: 0;
                   transform: translateY(20px);
@@ -138,37 +140,134 @@
         </div>
       </header>
 
-      <!-- FEATURES -->
-      <div id="features" class="text-center">
-        <div class="container">
-          <div class="col-md-10 col-md-offset-1 section-title">
-            <h2>Our Capabilities</h2>
-            <p>Security-first solutions designed for homes, businesses, and institutions.</p>
-          </div>
-          <div class="row">
-            <div class="col-xs-6 col-md-3"> 
-              <i class="fa fa-camera"></i>
-              <h3>HD Surveillance</h3>
-              <p>IP & analog camera systems with remote access and intelligent recording.</p>
-            </div>
-            <div class="col-xs-6 col-md-3"> 
-              <i class="fa fa-sitemap"></i>
-              <h3>Networking</h3>
-              <p>Robust wired & wireless networks, switches and structured cabling for reliable connectivity.</p>
-            </div>
-            <div class="col-xs-6 col-md-3"> 
-              <i class="fa fa-id-badge"></i>
-              <h3>Biometric Systems</h3>
-              <p>Accurate attendance and access solutions — fingerprint, face recognition, and RFID integration.</p>
-            </div>
-            <div class="col-xs-6 col-md-3"> 
-              <i class="fa fa-wrench"></i>
-              <h3>Support & Maintenance</h3>
-              <p>Local maintenance contracts, remote support, and system health monitoring.</p>
-            </div>
-          </div>
-        </div>
+     <!-- FEATURES -->
+<style>
+  /* Overall Section */
+  #features {
+    padding: 80px 0;
+    background: #f5f6fa;
+    font-family: "Poppins", sans-serif;
+  }
+
+  #features .section-title h2 {
+    font-weight: 700;
+    color: #1e1e2f;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  #features .section-title p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  /* Feature Box */
+  #features .col-md-3 {
+    background: #eeebeb;
+    border-radius: 16px;
+    padding: 40px 25px;
+    margin-bottom: 30px;
+    transition: all 0.35s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Icon Style */
+  #features .col-md-3 i {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    transition: all 0.35s ease;
+  }
+
+  #features .col-md-3 h3 {
+    font-weight: 600;
+    color: #222;
+    font-size: 20px;
+    margin-bottom: 12px;
+    transition: color 0.35s ease;
+  }
+
+  #features .col-md-3 p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* Hover Effects */
+  #features .col-md-3:hover {
+    transform: translateY(-12px);
+    border-color: #060147;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  #features .col-md-3:hover i {
+    color: #060147;
+    transform: scale(1.15) rotate(-2deg);
+  }
+
+  #features .col-md-3:hover h3 {
+    color: #060147;
+  }
+
+  /* Subtle bottom accent bar */
+  #features .col-md-3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: #060147;
+    transition: all 0.35s ease;
+    transform: translateX(-50%);
+  }
+
+  #features .col-md-3:hover::after {
+    width: 60%;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    #features .col-md-3 {
+      margin-bottom: 25px;
+    }
+  }
+</style>
+
+<div id="features" class="text-center">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1 section-title">
+      <h2>Our Capabilities</h2>
+      <p>Security-first solutions designed for homes, businesses, and institutions.</p>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-md-3"> 
+        <i class="fa fa-camera"></i>
+        <h3>HD Surveillance</h3>
+        <p>IP & analog camera systems with remote access and intelligent recording.</p>
       </div>
+      <div class="col-xs-6 col-md-3"> 
+        <i class="fa fa-sitemap"></i>
+        <h3>Networking</h3>
+        <p>Robust wired & wireless networks, switches and structured cabling for reliable connectivity.</p>
+      </div>
+      <div class="col-xs-6 col-md-3"> 
+        <i class="fa fa-id-badge"></i>
+        <h3>Biometric Systems</h3>
+        <p>Accurate attendance and access solutions — fingerprint, face recognition, and RFID integration.</p>
+      </div>
+      <div class="col-xs-6 col-md-3"> 
+        <i class="fa fa-wrench"></i>
+        <h3>Support & Maintenance</h3>
+        <p>Local maintenance contracts, remote support, and system health monitoring.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
       <!-- ABOUT -->
       <div id="about">
