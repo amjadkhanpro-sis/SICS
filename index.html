@@ -94,13 +94,13 @@
                 .glow-gradient {
                   font-size: 2.8rem;
                   font-weight: 700;
-                  background: linear-gradient(90deg, #ffffff, #969494, #ffffff);
+                  background: linear-gradient(90deg, #f00505, #ffffff, #e40a0a);
                   background-size: 300%;
                   background-clip: text;
                   -webkit-background-clip: text;
                   -webkit-text-fill-color: transparent;
                   color: transparent;
-                  text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+                  text-shadow: 0 0 15px rgba(230, 217, 48, 0.548);
                   opacity: 0;
                   transform: translateY(20px);
                   animation: fadeIn 2s ease-out forwards, gradientMove 5s infinite linear;
@@ -130,7 +130,6 @@
                     margin-top: 2px;
                   }
                   </style>
-
                   <a href="#contact" class="btn btn-custom btn-lg page-scroll">Contact Us</a>
                 </div>
               </div>
@@ -364,19 +363,115 @@
             <h2>Meet the Team</h2>
             <p>Experienced professionals dedicated to security and connectivity.</p>
           </div>
+         
+          <!-- TEAM SECTION -->
+                    <style>
+                      .team {
+                        margin-bottom: 30px;
+                      }
 
-          <div id="row">
-            <div class="col-md-3 col-sm-6 team">
-              <div class="thumbnail">
-                <img src="./img/team/01.jpg" alt="Amjad Khan" class="team-img" loading="lazy">
-                <div class="caption">
-                  <h4>Amjad Khan</h4>
-                  <p>CEO & Founder</p>
-                </div>
-              </div>
-            </div>
+                      .team .thumbnail {
+                        position: relative;
+                        overflow: hidden;
+                        border: none;
+                        border-radius: 14px;
+                        padding: 0;
+                        background: #fff;
+                        transition: all 0.3s ease;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+                      }
+
+                      .team .team-img {
+                        width: 100%;
+                        height: auto;
+                        border-radius: 14px;
+                        transition: transform 0.5s ease;
+                      }
+
+                      /* Overlay */
+                      .team .thumbnail::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, 0);
+                        transition: all 0.4s ease;
+                        border-radius: 14px;
+                        z-index: 1;
+                      }
+
+                      /* Caption */
+                      .team .caption {
+                        position: absolute;
+                        bottom: 20px;
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                        z-index: 2;
+                        color: #ffffff;
+                        opacity: 0;
+                        transform: translateY(20px);
+                        transition: all 0.4s ease;
+                      }
+
+                      .team .caption h4 {
+                        font-weight: 600;
+                        margin: 0;
+                        font-size: 18px;
+                        transition: color 0.4s ease;
+                      }
+
+                      .team .caption p {
+                        font-size: 14px;
+                        margin-top: 5px;
+                        transition: color 0.4s ease;
+                      }
+
+                      /* Hover effects */
+                      .team .thumbnail:hover .team-img {
+                        transform: scale(1.1);
+                      }
+
+                      .team .thumbnail:hover::before {
+                        background: rgba(0, 0, 0, 0.6);
+                      }
+
+                      .team .thumbnail:hover .caption {
+                        opacity: 1;
+                        transform: translateY(0);
+                      }
+
+                      /* Text color change on hover */
+                      .team .thumbnail:hover .caption h4 {
+                        color: #ff5252; /* Change this to your brand color */
+                      }
+
+                      .team .thumbnail:hover .caption p {
+                        color: #ffd6d6; /* Lighter version for subtitle */
+                      }
+
+                      /* Card lift */
+                      .team .thumbnail:hover {
+                        transform: translateY(-8px);
+                        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+                      }
+                      </style>
+                      <div id="row">
+                        <div class="col-md-3 col-sm-6 team">
+                          <div class="thumbnail">
+                            <img src="./img/team/01.jpg" alt="Amjad Khan" class="team-img" loading="lazy">
+                            <div class="caption">
+                              <h4>Amjad Khan</h4>
+                              <p>CEO & Founder</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
             <!-- other team members placeholders -->
+            
             <div class="col-md-3 col-sm-6 team">
               <div class="thumbnail">
                 <img src="img/team/02.jpg" alt="Team member" class="team-img" loading="lazy">
